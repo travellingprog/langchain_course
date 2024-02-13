@@ -1,15 +1,10 @@
-import os
 from typing import Any
 
-from dotenv import load_dotenv
 from langchain.chains import RetrievalQA
 from langchain_openai import ChatOpenAI, OpenAIEmbeddings
 from langchain_pinecone import Pinecone
 
-load_dotenv()
-
-EMBEDDING_MODEL = "text-embedding-3-small"
-INDEX_NAME = os.environ.get("PINECONE_INDEX_NAME")
+from documentation_helper.consts import EMBEDDING_MODEL, INDEX_NAME
 
 
 def run_llm(query: str) -> Any:
@@ -24,7 +19,7 @@ def run_llm(query: str) -> Any:
         retriever=docsearch.as_retriever(),
         return_source_documents=True,
     )
-    return qa({"query": query})
+    return qa.invoke({"query": query})
 
 
 if __name__ == "__main__":
