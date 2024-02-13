@@ -1,0 +1,20 @@
+[tool.poetry]
+name = "react-langchain"
+version = "0.1.0"
+description = "Demo of using ReAct methodology with LangChain"
+authors = ["Erick Cardenas <erick.mendez@toptal.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.11"
+langchain = "^0.1.4"
+python-dotenv = "^1.0.1"
+langchain-openai = "^0.0.5"
+
+
+[tool.poetry.group.dev.dependencies]
+black = "^24.1.0"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"

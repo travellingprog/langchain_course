@@ -1,0 +1,22 @@
+[tool.poetry]
+name = "documentation-helper"
+version = "0.1.0"
+description = "Demo of using LangChain + Pinecone to create a documentation chatbot"
+authors = ["Erick Cardenas <erick.mendez@toptal.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.11"
+python-dotenv = "^1.0.1"
+langchain = "^0.1.6"
+langchain-openai = "^0.0.5"
+langchain-pinecone = "^0.0.1"
+beautifulsoup4 = "^4.12.3"
+
+
+[tool.poetry.group.dev.dependencies]
+black = "^24.1.1"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"

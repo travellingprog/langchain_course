@@ -1,0 +1,22 @@
+[tool.poetry]
+name = "intro-to-vector-db"
+version = "0.1.0"
+description = "demo of using a vector db with LangChain"
+authors = ["Erick Cardenas <erick.mendez@toptal.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.11"
+langchain = "^0.1.6"
+langchain-openai = "^0.0.5"
+langchain-pinecone = "^0.0.1"
+python-dotenv = "^1.0.1"
+langchainhub = "^0.1.14"
+
+
+[tool.poetry.group.dev.dependencies]
+black = "^24.1.1"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
