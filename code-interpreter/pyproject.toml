@@ -1,0 +1,23 @@
+[tool.poetry]
+name = "code-interpreter"
+version = "0.1.0"
+description = "Demo of creating a Python code agent, for the LangChain course"
+authors = ["Erick Cardenas <erick.mendez@toptal.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.11"
+langchain = "^0.1.7"
+python-dotenv = "^1.0.1"
+langchain-openai = "^0.0.6"
+qrcode = "^7.4.2"
+langchainhub = "^0.1.14"
+langchain-experimental = "^0.0.51"
+
+
+[tool.poetry.group.dev.dependencies]
+black = "^24.2.0"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"

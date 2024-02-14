@@ -1,0 +1,14 @@
+{
+  "editor.defaultFormatter": "ms-python.black-formatter",
+  "editor.formatOnSave": true,
+  "editor.detectIndentation": false,
+  "editor.codeActionsOnSave": {
+    "source.organizeImports": "explicit"
+},
+  "black-formatter.importStrategy": "fromEnvironment",
+  "isort.importStrategy": "fromEnvironment",
+"editor.tabSize": 4,
+"[jsonc]": {
+    "editor.defaultFormatter": "vscode.json-language-features"
+},
+}
